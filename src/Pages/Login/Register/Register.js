@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -23,6 +23,14 @@ const Register = () => {
         createUserWithEmailAndPassword(email,password)
 
     }
+
+    const navigate = useNavigate();
+    
+    if(user){
+        navigate('/home');
+    }
+
+
     
 
     return (
