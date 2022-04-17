@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './serviceDetail.css';
 
 const ServiceDetail = () => {
@@ -26,7 +26,11 @@ const ServiceDetail = () => {
                     <h5 className="card-title">{foundDetails?.name}</h5>
                     <p className="card-text">${foundDetails?.fee}</p>
                     <p className="card-text">${foundDetails?.description}</p>
-                    <button className='btn btn-info'>Confirm</button>
+                    <div>
+                        <Link to='/checkout'>
+                        <button className='btn btn-info'>Confirm</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
