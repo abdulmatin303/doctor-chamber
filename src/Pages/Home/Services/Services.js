@@ -14,8 +14,8 @@ const Services = () => {
 
 
     return (
-        <div className='container'>
-            <h3>This is servicessv {services.length} </h3>
+        <div id='services' className='container'>
+            <h3> My Services </h3>
             
             <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
                 {
