@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { signInWithEmailAndPassword } from 'firebase/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     const [
         createUserWithEmailAndPassword,
@@ -24,17 +28,13 @@ const Register = () => {
 
     }
 
-    const navigate = useNavigate();
     
     if(user){
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
-
-    
-
     return (
-        <div>
+        <div className='container w-50 mx-auto'>
             
             <div className='register-form'>
             <h2 style={{textAlign: 'center'}}>Please Register</h2>
@@ -48,6 +48,8 @@ const Register = () => {
             </form>
             <p>Already have an account? <Link to="/login" className='text-primary text-decoration-none' >Please Login</Link> </p>
         </div>
+
+        <SocialLogin></SocialLogin>
             
         </div>
     );
