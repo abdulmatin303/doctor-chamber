@@ -1,13 +1,12 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
     const emailRef = useRef('');
     const passwordRef = useRef('');
 
-    const navigate = useNavigate();
 
     const handleSubmit = (event) =>{
         event.preventDefault();
@@ -16,9 +15,7 @@ const Login = () => {
         console.log(email,password);
     }
 
-    const navigateRegister = event => {
-        navigate('/register');
-    }
+   
 
     return (
         <div className='container w-50 mx-auto'>
@@ -42,7 +39,7 @@ const Login = () => {
         <Button variant="primary" type="submit">Login</Button>
         </Form>
 
-        <p>New Patient ? <span className='text-primary' onClick={navigateRegister}>Register</span></p>
+        <p>New Patient? <Link to='/register' className='text-primary text-decoration-none'>Register</Link></p>
 
         </div>
     );
