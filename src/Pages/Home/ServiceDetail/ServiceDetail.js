@@ -20,12 +20,12 @@ const ServiceDetail = () => {
     return (
         <div>
             <h3>Details {serviceId}</h3>
-            <div class="card w-50  mx-auto">
-                <img src={foundDetails?.img} class="card-img-top w-50" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{foundDetails?.name}</h5>
-                    <p class="card-text">${foundDetails?.fee}</p>
-                    <p class="card-text">${foundDetails?.description}</p>
+            <div className="card w-50  mx-auto">
+                <img src={foundDetails?.img} className="card-img-top w-50" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{foundDetails?.name}</h5>
+                    <p className="card-text">${foundDetails?.fee}</p>
+                    <p className="card-text">${foundDetails?.description}</p>
                     <button className='btn btn-info'>Confirm</button>
                 </div>
             </div>

@@ -13,11 +13,11 @@ const Service = (props) => {
 
     return (
         <div className='col'>
-            <div class="card">
-                <img src={img} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{name}</h5>
-                    <p class="card-text">${fee}</p>
+            <div className="card">
+                <img src={img} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <p className="card-text">${fee}</p>
                     <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-info'>Book Now</button>
                 </div>
             </div>
