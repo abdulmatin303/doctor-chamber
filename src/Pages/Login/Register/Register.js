@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Register.css';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -16,22 +16,27 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
-    const handleRegister = event =>{
+      const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+      if(user) {
+        console.log("user",user);
+      }
+
+      const handleRegister = async (event) =>{
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        createUserWithEmailAndPassword(email,password)
-
+        await createUserWithEmailAndPassword(email,password);
+        await updateProfile({ displayName : name });
+        console.log('Updated profile');
+        navigate('/home');
     }
 
     
-    if(user){
-        navigate(from, { replace: true });
-    }
 
     return (
         <div className='container w-50 mx-auto'>
@@ -44,7 +49,8 @@ const Register = () => {
                 <input type="email" name="email" id="" placeholder='Email Address' required/>
                 
                 <input type="password" name="password" id="" placeholder='Password' required/>
-                <input type="submit" value="Register" />
+
+                <input type="submit" className='bg-primary my-3'  value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-primary text-decoration-none' >Please Login</Link> </p>
         </div>

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -22,6 +22,11 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
+      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
+        auth
+      );
+
+      
 
     const handleSubmit = (event) =>{
         event.preventDefault();
@@ -33,9 +38,24 @@ const Login = () => {
 
     }
 
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        await sendPasswordResetEmail(email)
+    }
+
     if(user){
         navigate(from, { replace: true });
     }
+
+    let errorElement;
+    if (error) {
+        
+        errorElement =   <div>
+            <p className='text-danger'>Error: {error.message}</p>
+          </div>
+        
+      }
 
     
 
@@ -53,10 +73,14 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
-        <Button variant="primary" type="submit">Login</Button>
+        <Button variant="primary w-50 mx-auto d-block" type="submit">Login</Button>
         </Form>
 
+        {errorElement}
+
         <p className='mt-2'>New Patient? <Link to='/register' className='text-primary text-decoration-none'>Register</Link></p>
+
+        <p className='mt-2'>Forget password? <button className='text-primary text-decoration-none' onClick={resetPassword}>Forget password</button></p>
 
         <SocialLogin></SocialLogin>
 
