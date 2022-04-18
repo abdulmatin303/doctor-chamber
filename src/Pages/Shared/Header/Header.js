@@ -17,9 +17,7 @@ const Header = () => {
      <>
        <Navbar sticky='top' collapseOnSelect expand="lg" bg="primary" variant="dark">
   <Container>
-  <Navbar.Brand as={Link} to="/">
-    <img height={40} src={logo} alt="" />
-  </Navbar.Brand>
+  <Nav.Link href="home#banner" className='text-white fw-bold fs-3'>Doctor Chamber</Nav.Link>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
@@ -27,7 +25,7 @@ const Header = () => {
      <Nav.Link href="home#consultation">Free Consultation</Nav.Link>
      <Nav.Link href="home#feedback">Feedback</Nav.Link>
      <Nav.Link href="home#blogs">Blogs</Nav.Link>
-      <Nav.Link href="home#about">About</Nav.Link>
+    <Nav.Link href="home#about">About</Nav.Link>
       
     </Nav>
     <Nav>
