@@ -13,7 +13,7 @@ const Service = (props) => {
 
     return (
         <div className='col'>
-            <div className="card">
+            <div className="card shadow">
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

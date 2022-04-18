@@ -18,7 +18,7 @@ const Feedback = () => {
                   <Rating
                   emptySymbol="far fa-star icon-color"
                   fullSymbol="fas fa-star icon-color" 
-                  readonly initialRating={3}></Rating>
+                  readonly initialRating={3.5}></Rating>
                   </div>
                     </div>
                     </div>
@@ -34,7 +34,7 @@ const Feedback = () => {
                   <Rating
                   emptySymbol="far fa-star icon-color"
                   fullSymbol="fas fa-star icon-color" 
-                  readonly initialRating={3}></Rating>
+                  readonly initialRating={4.5}></Rating>
                   </div>
                     </div>
                     </div>
@@ -50,7 +50,7 @@ const Feedback = () => {
                   <Rating
                   emptySymbol="far fa-star icon-color"
                   fullSymbol="fas fa-star icon-color" 
-                  readonly initialRating={3}></Rating>
+                  readonly initialRating={4}></Rating>
                   </div>
                     </div>
                     </div>

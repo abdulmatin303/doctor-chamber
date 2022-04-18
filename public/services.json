@@ -3,42 +3,42 @@
         "id": 1,
         "name": "UPPER LIPS",
         "fee": "3000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "description": "Laser hair removal is perfectly safe for your upper lip. In fact, treatments like our Forever Bare BBL laser are safe for many sensitive areas of the body, including the upper lip, face, neck, and chin.",
+        "img": "https://i.ibb.co/tsGNL4q/upper-Lips.png"
     },
     {
         "id": 2,
         "name": "FACIAL HAIR REMOVAL",
         "fee": "1000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "description": "Laser hair removal on the face is a noninvasive medical procedure that uses a beam of light (a laser) to remove hair from the face. Also used armpits, legs, or bikini area, but on the face it's used primarily around the mouth, chin, or cheeks.",
+        "img": "https://i.ibb.co/HHPTbCm/facial-Hair-Removal2.png"
     },
     {
         "id": 3,
         "name": "BREAD LINE SHAPING",
         "fee": "1500",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "description": "Laser beard hair removal has quickly become the number one hair removal treatment option for men. Not only is it a very effective, but it’s a relatively inexpensive and painless process as well, and the results are very long lasting.",
+        "img": "https://i.ibb.co/RjL3rnw/bread-Line-Shaping2.png"
     },
     {
         "id": 4,
         "name": "UNDER ARMS",
         "fee": "1800",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "description": "Your skin color is determined by pigment cells called melanocytes. When these cells multiply more, they can turn the skin a darker color.",
+        "img": "https://i.ibb.co/p2Jp3Wf/under-Arms.png"
     },
     {
         "id": 5,
         "name": "BACK & CHEST",
         "fee": "1000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "description": "The first thing to know is that there’s no cure for back & chest acne, but there are lots of different treatment options. Over time you should be able to reduce the severity of your symptoms.",
+        "img": "https://i.ibb.co/51x6tP4/backBody.jpg"
     },
     {
         "id": 6,
         "name": "LEGS",
         "fee": "3000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "description": "The idea of waxing is appealing for many reasons — it lasts longer than shaving, helps you avoid razor bumps, and even thins out hair regrowth over time.",
+        "img": "https://i.ibb.co/Lhpmgcv/legs.jpg"
     }
 ]
