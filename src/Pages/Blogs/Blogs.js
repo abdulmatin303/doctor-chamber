@@ -7,9 +7,16 @@ const Blogs = () => {
             <div className="container mt-3">
                 <div className="first  p-4  shadow">
                     <h4 className='text-center'>Difference between authorization and authentication.</h4>
-                    <img className='p-3 mb-3' src="https://i.ibb.co/pKyz8h9/auth.jpg" alt="" />
-                    <p><span className='text-success'>Authentication</span>  is a process, it defines that the user is the correct owner of any account. It is the way to identify the user before accessing the application.</p>
+                    <div className="row">
+                        <div className="col-md-12 col-sm-12">
+                        <img className='p-3 mb-3 img-fluid' src="https://i.ibb.co/pKyz8h9/auth.jpg" alt="" />
+                    
+                        </div>
+                        <div className="col-md-12  col-sm-12">
+                        <p><span className='text-success'>Authentication</span>  is a process, it defines that the user is the correct owner of any account. It is the way to identify the user before accessing the application.</p>
                     <p><span className='text-success'>Authorization</span>  is the process of verifying that what they have access in this account. If they do not have access, they will not be allowed to take that action.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="second  p-4 mt-5 shadow">
