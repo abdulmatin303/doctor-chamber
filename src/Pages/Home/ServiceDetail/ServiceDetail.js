@@ -28,7 +28,7 @@ const ServiceDetail = () => {
                     <p className="card-text">{foundDetails?.description}</p>
                     <div>
                         <Link to='/checkout'>
-                        <button className='btn btn-info'>Confirm</button>
+                        <button className='btn btn-info'>Book Now</button>
                         </Link>
                     </div>
                 </div>

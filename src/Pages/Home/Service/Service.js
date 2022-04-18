@@ -18,7 +18,8 @@ const Service = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">${fee}</p>
-                    <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-info'>Book Now</button>
+                    <p className="card-text">{description.slice(0,35)}.....</p>
+                    <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-info'>More Details</button>
                 </div>
             </div>
         </div>
