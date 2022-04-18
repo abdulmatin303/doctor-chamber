@@ -8,7 +8,7 @@ const Feedback = () => {
             <h3 className='text-center text-primary mb-5'> Patient's Feedback </h3>
             <div className="row">
                 {/* first feedback  */}
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
                     <div className="card shadow p-3" style={{height:'350px'}}>
                     <img className='img-fluid w-50' src="https://i.ibb.co/vQQ1bQp/feedback.jpg" alt="" />
                     <div className="text-center">
@@ -24,7 +24,7 @@ const Feedback = () => {
                     </div>
                 </div>
                 {/* second feedback  */}
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-duration="3000">
                     <div className="card shadow p-3" style={{height:'350px'}}>
                     <img className='img-fluid w-50' src="https://i.ibb.co/vQQ1bQp/feedback.jpg" alt="" />
                     <div className="text-center">
@@ -40,7 +40,7 @@ const Feedback = () => {
                     </div>
                 </div>
                 {/* third feedback  */}
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
                     <div className="card shadow p-3" style={{height:'350px'}}>
                     <img className='img-fluid w-50' src="https://i.ibb.co/vQQ1bQp/feedback.jpg" alt="" />
                     <div className="text-center">

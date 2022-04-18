@@ -13,34 +13,34 @@ const Header = () => {
     signOut(auth);
   }
 
-    return ( 
-     <>
-       <Navbar sticky='top' collapseOnSelect expand="lg" bg="primary" variant="dark">
-  <Container>
-  <Nav.Link href="home#banner" className='text-white fw-bold fs-3'>Doctor Chamber</Nav.Link>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
-      <Nav.Link href="home#services">Services</Nav.Link>
-     <Nav.Link href="home#consultation">Free Consultation</Nav.Link>
-     <Nav.Link href="home#feedback">Feedback</Nav.Link>
-     <Nav.Link href="home#blogs">Blogs</Nav.Link>
-    <Nav.Link href="home#about">About</Nav.Link>
-      
-    </Nav>
-    <Nav>
-      
-      {
-        user ? <button onClick={handleSignOut} className='btn btn-primary'>Sign Out</button> :  <Nav.Link as={Link} to="/login">
-        Login
-      </Nav.Link>
-      }
-    </Nav>
-  </Navbar.Collapse>
-  </Container>
-</Navbar>
-     </>
-    );
+  return (
+    <>
+      <Navbar sticky='top' collapseOnSelect expand="lg" bg="primary" variant="dark">
+        <Container>
+          <Nav.Link href="home#banner" className='text-white fw-bold fs-3'>Doctor Chamber</Nav.Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="home#services">Services</Nav.Link>
+              <Nav.Link href="home#consultation">Free Consultation</Nav.Link>
+              <Nav.Link href="home#feedback">Feedback</Nav.Link>
+              <Nav.Link href="home#blogs">Blogs</Nav.Link>
+              <Nav.Link href="home#about">About</Nav.Link>
+
+            </Nav>
+            <Nav>
+
+              {
+                user ? <button onClick={handleSignOut} className='btn btn-primary'>Sign Out</button> : <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              }
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
+  );
 };
 
 export default Header;
