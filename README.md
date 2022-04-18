@@ -2,7 +2,7 @@
 
 
 
-## Live Site Link: 
+## Live Site Link: https://doctor-chamber-bd.web.app/
 
 
 
@@ -27,3 +27,4 @@
 - React Router 6
 - React Rating
 - React Firebase Hook
+- AOS Animation
