@@ -1,0 +1,63 @@
+import React from 'react';
+import Rating from 'react-rating';
+import './Feedback.css';
+
+const Feedback = () => {
+    return (
+        <div id='feedback' className='mt-5 container'>
+            <h3 className='text-center text-primary mb-5'> Patient's Feedback </h3>
+            <div className="row">
+                {/* first feedback  */}
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="card shadow p-3" style={{height:'350px'}}>
+                    <img className='img-fluid w-50' src="https://i.ibb.co/vQQ1bQp/feedback.jpg" alt="" />
+                    <div className="text-center">
+                    <h5>Md Abdul</h5>
+                    <p>Doctor is so caring and passionate for his profession.</p>
+                    <div className='rating'>
+                  <Rating
+                  emptySymbol="far fa-star icon-color"
+                  fullSymbol="fas fa-star icon-color" 
+                  readonly initialRating={3}></Rating>
+                  </div>
+                    </div>
+                    </div>
+                </div>
+                {/* second feedback  */}
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="card shadow p-3" style={{height:'350px'}}>
+                    <img className='img-fluid w-50' src="https://i.ibb.co/vQQ1bQp/feedback.jpg" alt="" />
+                    <div className="text-center">
+                    <h5>Matin</h5>
+                    <p>Doctor provides minimum test and medicines.</p>
+                    <div className='rating'>
+                  <Rating
+                  emptySymbol="far fa-star icon-color"
+                  fullSymbol="fas fa-star icon-color" 
+                  readonly initialRating={3}></Rating>
+                  </div>
+                    </div>
+                    </div>
+                </div>
+                {/* third feedback  */}
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="card shadow p-3" style={{height:'350px'}}>
+                    <img className='img-fluid w-50' src="https://i.ibb.co/vQQ1bQp/feedback.jpg" alt="" />
+                    <div className="text-center">
+                    <h5>Rafi</h5>
+                    <p>Doctor provides free service for poor people.</p>
+                    <div className='rating'>
+                  <Rating
+                  emptySymbol="far fa-star icon-color"
+                  fullSymbol="fas fa-star icon-color" 
+                  readonly initialRating={3}></Rating>
+                  </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Feedback;

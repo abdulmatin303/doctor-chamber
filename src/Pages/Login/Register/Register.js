@@ -47,7 +47,8 @@ const Register = () => {
         <div className='container w-50 mx-auto'>
             
             <div className='register-form'>
-            <h2 style={{textAlign: 'center'}}>Please Register</h2>
+            
+            <h2 className='text-primary mt-5 mb-3' style={{textAlign: 'center'}}>Please Register</h2>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name'/>
                 
